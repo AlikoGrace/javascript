@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto',sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+/*    justify content for the height*/
+    align-items: center;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding:0 20px ;
+}
+.counter-div{
+    width: 40rem;
+    margin: auto;
+    padding: 1rem;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    boder-raduis:5px;
+
+}
+
+.counter-div > *{
+    /*This selector applies to everything child decendants of it's dive*/
+    margin-bottom: 2rem;
+}
+.count{
+    font-size: 4rem;
+}
+hr{
+    color: white;
+}
+.buttons button{
+/*  div called buttons and target individual buttons  */
+    padding: 1rem;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+button.decrease{
+    background-color: red;
+}
+button.reset{
+    background-color: white;
+    color:black ;
+}
+button.increase{
+    background-color: green;
+}
